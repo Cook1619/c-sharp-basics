@@ -45,6 +45,12 @@ namespace CSharpBasics
                 }
             }
             Console.WriteLine($"The total sum is: {sum}");
+
+            var names = new List<string> { "Danelle", "Flynn", "Matt", "Juliette", "Lilly" };
+            foreach (string name in names)
+            {
+                Console.WriteLine($"Name is: {name.ToUpper()}");
+            }
         }
     }
 }
