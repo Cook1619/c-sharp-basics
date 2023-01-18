@@ -16,7 +16,7 @@ namespace CSharpBasics
             // Checks the condition, then executes
             while(counter <= 10)
             {
-                Console.WriteLine($"Counter is {counter}");
+                // Console.WriteLine($"Counter is {counter}");
                 counter++;
             }
 
@@ -25,7 +25,7 @@ namespace CSharpBasics
             // This is execute before checking the condition
             do
             {
-                Console.WriteLine($"Counter 2 is {counter2}");
+                // Console.WriteLine($"Counter 2 is {counter2}");
                     counter2++;
             } while (counter2 <= 10);
 
@@ -40,13 +40,24 @@ namespace CSharpBasics
             {
                 if(i % 3 == 0)
                 {
-                    Console.WriteLine($"This number is divisble by 20: {i}");
+                    // Console.WriteLine($"This number is divisble by 20: {i}");
                     sum += i;
                 }
             }
             Console.WriteLine($"The total sum is: {sum}");
 
             var names = new List<string> { "Danelle", "Flynn", "Matt", "Juliette", "Lilly" };
+            var nums = new List<int> { 1, 10, 23, 2, 56, 3, 45, 34 };
+            nums.Sort();
+            foreach(int num in nums)
+            {
+                Console.WriteLine($"Nums are: {num}");
+            }
+            names.Add("Kali");
+            names.Remove("Matt");
+            var flynn = names.IndexOf("Flynn");
+            Console.WriteLine(flynn);
+            names.Sort();
             foreach (string name in names)
             {
                 Console.WriteLine($"Name is: {name.ToUpper()}");
